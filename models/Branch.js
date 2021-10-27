@@ -17,6 +17,10 @@ const BranchSchema = new Schema({
         type: String,
         required: true
     },
+    branchIncharge: {
+        type: Schema.Types.ObjectId,
+        ref: 'User'
+    },
     contactNumber: {
         type: String,
         required: true
